@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XCSS version="1.0"><![CDATA[.Button
+{
+	color : azure;
+	border-radius : 3px;
+	box-shadow : ;
+	font : normal bold  10pt/normal "Arial";
+	background : limegreen;
+	cursor : auto;
+	-nexa-border : 0px solid #ffffff;
+}
+.Button[status=focused]
+{
+	color : #000000;
+	border-radius : 3px;
+	box-shadow : 0px 0px 5px #FFFFFF;
+	font : normal 700 12pt /normal "Arial";
+	background : forestgreen;
+	cursor : auto;
+	-nexa-border : 0px solid #ffffff;
+}
+.Button[status=mouseover]
+{
+	color : ghostwhite;
+	background : cornflowerblue;
+	box-shadow : 0px 0px 5px #FFFFFF;
+	font : normal 700 15pt /normal "Arial";
+}
+.Static
+{
+	background : pink;
+	-nexa-text-align : center;
+	color : hotpink;
+	font : normal 700 15pt /normal "Arial";
+}
+.Static[status=mouseover]
+{
+	background : greenyellow;
+	-nexa-text-align : center;
+	color : green;
+	font : normal 700 15pt /normal "Arial";
+}
+]]></XCSS>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <GenInfo version="1.1">
+    <Rule>
+      <ENV rule_version="1.05"/>
+      <ADL rule_version="1.14"/>
+      <FDL rule_version="1.04"/>
+      <XCSS rule_version="1.04"/>
+      <Script rule_version="1.02"/>
+    </Rule>
+    <Info project="L:\PC Study\Gugbi\6_Nexacro_workspace\testNexacro17\" generated="C:\Users\my4my\Documents\nexacro\17.1\outputs\testNexacro17\">
+      <File url="typedefinition.xml" checksum="20200922092714" errormsg=""/>
+      <File url="appvariables.xml" checksum="20200922145012" errormsg=""/>
+      <File url="environment.xml" checksum="20200922093604" errormsg=""/>
+      <File url="_resource_\_theme_\default\theme.xcss" checksum="20200916101738" errormsg=""/>
+      <File url="Application_Desktop.xadl" checksum="20200921092900" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\framework\Framework.json" checksum="20200128141820" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\resources\Resource.json" checksum="20200128141820" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\CompBase.json" checksum="20200128141818" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\ComComp.json" checksum="20200128141818" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\Grid.json" checksum="20200128141818" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\ListView.json" checksum="20200128141820" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\DeviceAPI.json" checksum="20200128141818" errormsg=""/>
+      <File url="Work\A_Test.xfdl" checksum="20200916103500" errormsg=""/>
+      <File url="Work\B_Static.xfdl" checksum="20200916134404" errormsg=""/>
+      <File url="Work\C_Div.xfdl" checksum="20200916122152" errormsg=""/>
+      <File url="Work\D_Edit.xfdl" checksum="20200916122754" errormsg=""/>
+      <File url="Work\E_MaskEdit.xfdl" checksum="20200916163712" errormsg=""/>
+      <File url="Work\F_CheckBox_Radio.xfdl" checksum="20200916163712" errormsg=""/>
+      <File url="Work\G_Combo.xfdl" checksum="20200917102610" errormsg=""/>
+      <File url="Work\image.xfdl" checksum="20200917112656" errormsg=""/>
+      <File url="Work\I_Calendar.xfdl" checksum="20200917113650" errormsg=""/>
+      <File url="Work\J_Dataset.xfdl" checksum="20200917121850" errormsg=""/>
+      <File url="Work\Practice1_DataSetBinding.xfdl" checksum="20200917140836" errormsg=""/>
+      <File url="_resource_\_xcss_\test_css.xcss" checksum="20200921095112" errormsg=""/>
+      <File url="Work\H_ImageViewer.xfdl" checksum="20200917112656" errormsg=""/>
+      <File url="Work2\test_js.xfdl" checksum="20200921131408" errormsg=""/>
+      <File url="Work2\CommonUtil.xjs" checksum="20200922093628" errormsg=""/>
+      <File url="App_MDI.xadl" checksum="20200922093604" errormsg=""/>
+      <File url="FrameBase\Form_Top.xfdl" checksum="20200922100442" errormsg=""/>
+      <File url="FrameBase\Form_Left.xfdl" checksum="20200922144916" errormsg=""/>
+      <File url="FrameBase\Form_Work.xfdl" checksum="20200922092714" errormsg=""/>
+    </Info>
+  </GenInfo>
+</root>

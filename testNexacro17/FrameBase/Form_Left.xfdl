@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Left" width="200" height="670" titletext="Form_Left">
+    <Layouts>
+      <Layout width="200" height="670" screenid="screen00">
+        <Grid id="Grid00" taborder="0" left="10" top="40" width="180" height="170" binddataset="menu_Dataset" treeusecheckbox="false" oncellclick="Grid00_oncellclick" treeinitstatus="expand,all">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="159"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell displaytype="treeitemcontrol" edittype="tree" text="bind:m_name" treelevel="bind:m_level"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:m_name" treelevel="bind:m_level" displaytype="treeitemcontrol" edittype="tree"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+var objApp = nexacro.getApplication();
+
+this.Grid00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+// 	var sid = nexacro.getApplication().menu_Dataset.getColumn(e.row, "m_id");
+// 	var sid = nexacro.getApplication().menu_Dataset.getColumn(e.row, "m_url");
+	
+	var sid = objApp.menu_Dataset.getColumn(e.row, "m_id");
+	var surl = objApp.menu_Dataset.getColumn(e.row, "m_url");
+	
+// 	nexacro.getApplication().trace(sid);
+// 	nexacro.getApplication().trace(surl);
+
+	this.fn_open(sid, surl);
+	
+};	
+
+// 폼 내부 함수
+this.fn_open = function(sid, surl){
+	var parentFrame = objApp.mainframe.VFrameSet00.HFrameSet00.WorkFrame;
+	parentFrame.set_formurl(surl);
+	
+}
+
+]]></Script>
+  </Form>
+</FDL>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Left" width="200" height="690" titletext="Form_Left">
+    <Layouts>
+      <Layout width="200" height="690" screenid="example_screen">
+        <Grid id="Grid00" taborder="0" left="0" top="0" width="200" height="480" binddataset="menu_dataset" treeinitstatus="expand,all" treeusecheckbox="false">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row band="head" size="24"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="m_id"/>
+                <Cell col="1" text="m_name"/>
+                <Cell col="2" text="m_level"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:m_id"/>
+                <Cell col="1" text="bind:m_name"/>
+                <Cell col="2" text="bind:m_level"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

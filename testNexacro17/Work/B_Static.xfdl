@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="B_Static" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Static id="Static00" taborder="0" text="Static Test" left="26" top="30" width="74" height="50"/>
+        <Button id="Button00" taborder="1" text="버튼입니다." left="115" top="40" width="125" height="30" onclick="myEvent"/>
+        <Edit id="Edit00" taborder="2" left="15" top="115" width="195" height="45" onchanged="Edit00_onchanged"/>
+        <Button id="Button01" taborder="3" text="Edit Button" left="225" top="116" width="125" height="42" onclick="editFunc"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	// 코드 기술
+	
+	// this : 현재 작업 중인 Form
+	// Button00_onclick : 함수 이름
+	//		Button00 : 클릭하는 버튼의 아이디
+	//		onclick : 이벤트 종류
+	// function : 클릭 시 작동될 콜백 함수
+	// obj : 클릭한 버튼 객체
+	// e : 이벤트 정보를 가진 객체
+	nexacro.getApplication().trace(obj); // System.out.println() == console.log()
+	nexacro.getApplication().trace(e);
+	
+	this.alert("클릭하였습니다.");
+	nexacro.getApplication().trace('버튼 onclick이벤트 동작');
+	
+};
+
+this.myEvent = function(){
+	// '나의 이벤트 동작' 알람창 뜨게
+	alert('나의 이벤트 동작');
+	// 'myEvent동작' out 출력
+	nexacro.getApplication().trace("myEvent동작");
+};
+
+this.editFunc = function(){
+	var str = this.Edit00.value;
+	alert(str);
+	
+	this.Edit00.set_value("진도가 생각보다 안나가네ㅠ");
+	
+};
+
+]]></Script>
+  </Form>
+</FDL>

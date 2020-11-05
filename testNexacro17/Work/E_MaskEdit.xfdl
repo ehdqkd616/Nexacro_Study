@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="E_MaskEdit" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <MaskEdit id="MaskEdit00" taborder="0" left="28" top="30" width="242" height="58" format="#####" type="string"/>
+        <MaskEdit id="MaskEdit00_00" taborder="1" left="28" top="102" width="242" height="58" format="#,###"/>
+        <MaskEdit id="MaskEdit00_01" taborder="2" left="30" top="170" width="242" height="58" format="###-####-####" type="string"/>
+        <Static id="Static00" taborder="3" text="문자열" left="293" top="45" width="172" height="33" onclick="Static00_onclick"/>
+        <Static id="Static00_00" taborder="4" text="숫자" left="294" top="112" width="172" height="33"/>
+        <Static id="Static00_01" taborder="5" text="여러분들이 해볼거" left="290" top="187" width="172" height="33"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

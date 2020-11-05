@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script version="1.0" type="xscript5.1"><![CDATA[this.dayDiff = function(start, end){
+
+   var startDate = new Date();
+   var endDate = new Date();
+   var calDate;
+   var day = 60 * 60 * 24 * 1000;
+   
+   startDate.setFullYear(start.getYear());
+   startDate.setMonth(start.getMonth()-1);
+   startDate.setDate(start.getDay());
+   
+   endDate.setFullYear(end.getYear());
+   endDate.setMonth(end.getMonth()-1);
+   endDate.setDate(end.getDay());
+   
+   calDate = startDate.getTime() - endDate.getTime();
+   return Math.abs(calDate/day);
+   
+}
+
+	]]></Script>

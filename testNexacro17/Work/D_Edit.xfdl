@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="D_Edit" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Edit id="Edit00" taborder="0" left="17" top="30" width="233" height="58" autoskip="true" maxlength="5" text="값을 입력해주세요." displaynulltext="값을 입력해주세요."/>
+        <Edit id="Edit01" taborder="1" left="20" top="108" width="220" height="73" password="true"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

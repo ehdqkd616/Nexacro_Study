@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <GenInfo version="1.1">
+    <Rule>
+      <ENV rule_version="1.05"/>
+      <ADL rule_version="1.14"/>
+      <FDL rule_version="1.04"/>
+      <XCSS rule_version="1.04"/>
+      <Script rule_version="1.02"/>
+    </Rule>
+    <Info project="L:\PC Study\Gugbi\6_Nexacro_workspace\nexacro_portfolio\" generated="C:\Users\my4my\Documents\nexacro\17.1\outputs\nexacro_portfolio\">
+      <File url="typedefinition.xml" checksum="20200925002728" errormsg=""/>
+      <File url="appvariables.xml" checksum="20200925010646" errormsg=""/>
+      <File url="environment.xml" checksum="20200925002726" errormsg=""/>
+      <File url="_resource_\_theme_\default\theme.xcss" checksum="20200925002728" errormsg=""/>
+      <File url="Example.xadl" checksum="20200925003244" errormsg=""/>
+      <File url="FrameBase\Form_Top.xfdl" checksum="20200925012028" errormsg=""/>
+      <File url="FrameBase\Form_Left.xfdl" checksum="20200925110322" errormsg=""/>
+      <File url="FrameBase\Form_Work.xfdl" checksum="20200925035706" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\framework\Framework.json" checksum="20200128141820" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\resources\Resource.json" checksum="20200128141820" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\CompBase.json" checksum="20200128141818" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\ComComp.json" checksum="20200128141818" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\Grid.json" checksum="20200128141818" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\ListView.json" checksum="20200128141820" errormsg=""/>
+      <File url="C:\Program Files (x86)\nexacro\17.1\nexacro17lib\component\DeviceAPI.json" checksum="20200128141818" errormsg=""/>
+    </Info>
+  </GenInfo>
+</root>

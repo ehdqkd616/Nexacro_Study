@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="test_js" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Button id="Button00" taborder="0" text="계산하기" left="60" top="220" width="150" height="50" onclick="Button00_onclick"/>
+        <Static id="Static00" taborder="1" text="시작 날짜" left="60" top="60" width="127" height="42" background="lightsteelblue" onclick="Static00_onclick" font="normal 700 10pt/normal &quot;Arial&quot;" color="black"/>
+        <Static id="Static00_00" taborder="2" text="끝 날짜" left="60" top="128" width="127" height="42" background="lavender" font="normal bold 10pt/normal &quot;Arial&quot;" color="black"/>
+        <Calendar id="Calendar00" taborder="3" left="210" top="60" width="230" height="42"/>
+        <Calendar id="Calendar00_00" taborder="4" left="210" top="128" width="230" height="42"/>
+        <Static id="Static01" taborder="5" text="계산 날짜는" left="230" top="227" width="111" height="45" onclick="Static01_onclick" background="transparent" color="black"/>
+        <Edit id="Edit00" taborder="6" left="357" top="227" width="126" height="45"/>
+        <Static id="Static01_00" taborder="7" text="일 입니다." left="483" top="227" width="117" height="45" onclick="Static01_onclick" background="transparent" color="black"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[include "Work2::CommonUtil.xjs";
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var result = this.dayDiff(this.Calendar00, this.Calendar00_00);
+	this.Edit00.set_value(result);
+	
+	nexacro.getApplication().trace("결과 값은 " +result);
+	
+};
+]]></Script>
+  </Form>
+</FDL>

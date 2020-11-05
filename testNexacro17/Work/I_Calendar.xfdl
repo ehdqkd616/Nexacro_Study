@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="I_Calendar" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Calendar id="Calendar00" taborder="0" left="59" top="40" width="463" height="280" onchanged="Calendar00_onchanged" type="monthonly"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Calendar00_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

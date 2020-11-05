@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Practice1_DataSetBinding" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <ImageViewer id="ImageViewer00" taborder="0" text="ImageViewer00" left="47" top="55" width="203" height="165"/>
+        <Combo id="Combo00" taborder="1" text="Combo00" left="267" top="83" width="186" height="54" onitemchanged="Combo00_onitemchanged" innerdataset="image_dataset" codecolumn="url" datacolumn="name"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="image_dataset">
+        <ColumnInfo>
+          <Column id="name" type="STRING" size="256"/>
+          <Column id="url" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="name">피아노</Col>
+            <Col id="url">imagerc::로고/piano.jpg</Col>
+          </Row>
+          <Row>
+            <Col id="name">바이올린</Col>
+            <Col id="url">imagerc::로고/violin.jpg</Col>
+          </Row>
+          <Row>
+            <Col id="name">첼로</Col>
+            <Col id="url">imagerc::로고/cello.jpg</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Combo00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+// 	var url = this.Combo00.value;
+// 	this.ImageViewer00.set_image(url);
+	
+	this.ImageViewer00.set_image(this.Combo00.value);
+	this.ImageViewer00.set_stretch("fit");
+	nexacro.getApplication().trace(this.Combo00.value);
+	
+};
+]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="ImageViewer00" propid="text" datasetid="image_dataset" columnid="url"/>
+    </Bind>
+  </Form>
+</FDL>

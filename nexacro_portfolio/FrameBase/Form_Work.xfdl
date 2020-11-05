@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Work" width="1080" height="670" titletext="Form_Work" font="normal 10pt/normal &quot;맑은 고딕&quot;">
+    <Layouts>
+      <Layout width="1080" height="670" screenid="example_screen">
+        <Button id="Button00" taborder="0" text="회원가입" left="115" top="345" width="140" height="40" color="white" background="royalblue" onclick="Button00_onclick"/>
+        <TextArea id="TextArea00" taborder="1" left="45" top="410" width="455" height="70" readonly="true"/>
+        <MaskEdit id="phone" taborder="2" left="200" top="275" width="300" height="40" format="###-####-####" onchanged="MaskEdit00_onchanged" type="string"/>
+        <Radio id="major" taborder="3" left="200" top="223" width="300" height="40" onitemchanged="Radio00_onitemchanged" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" direction="vertical" text="" index="-1">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="datacolumn">자바학부</Col>
+                <Col id="codecolumn">Java</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">보안학부</Col>
+                <Col id="codecolumn">Security</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Edit id="userId" taborder="4" left="200" top="65" width="300" height="40" onchanged="Edit00_onchanged"/>
+        <Static id="Static00" taborder="5" text="회원가입" left="45" top="10" width="130" height="45" font="normal 700 20pt/normal &quot;맑은 고딕&quot;" textAlign="center"/>
+        <Static id="Static01" taborder="6" text="아이디" left="45" top="65" width="130" height="40" background="royalblue" textAlign="center" color="white"/>
+        <Static id="Static01_00" taborder="7" text="비밀번호" left="45" top="118" width="130" height="40" background="royalblue" textAlign="center" color="white"/>
+        <Static id="Static01_00_00" taborder="8" text="이름" left="45" top="170" width="130" height="40" background="royalblue" textAlign="center" color="white"/>
+        <Static id="Static01_00_00_00" taborder="9" text="학부" left="45" top="223" width="130" height="40" background="royalblue" textAlign="center" color="white"/>
+        <Static id="Static01_00_00_00_00" taborder="10" text="전화번호" left="45" top="275" width="130" height="40" background="royalblue" textAlign="center" color="white"/>
+        <Edit id="password" taborder="11" left="200" top="118" width="300" height="40" password="true"/>
+        <Edit id="userName" taborder="12" left="200" top="170" width="300" height="40"/>
+        <Button id="Button00_00" taborder="13" text="취소하기" left="300" top="345" width="140" height="40" background="gray" color="white" onclick="Button00_00_onclick"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Button00_00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.userId.set_value();
+	this.password.set_value();
+	this.userName.set_value();
+	this.major.set_value();
+	this.phone.set_value();
+};
+
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var result = this.check();
+	
+	if(result){
+		this.TextArea00.set_value(this.major.text + " " + this.userName.value + "(" + this.userId.value + ") 훈련생, 응원합니다! \n핸드폰 번호 : " + this.phone.value);
+	}
+	
+};
+
+this.check = function(){
+	
+	var result = false;
+	
+	if(this.userId.value == "" || this.userId.value == null || this.userId.value.charAt(0) == " ") {
+ 		alert("비어있는 항목이 존재합니다.");
+		this.userId.setFocus();
+		return result;
+  	} else if(this.password.value == "" || this.password.value == null || this.password.value.charAt() == " "){
+ 		alert("비어있는 항목이 존재합니다.");
+ 		this.password.setFocus();
+ 	} else if(this.userName.value == "" || this.userName.value == null || this.userName.value.charAt() == " "){
+ 		alert("비어있는 항목이 존재합니다.");
+ 		this.userName.setFocus();
+	} else if(this.major.value == null){
+		alert("비어있는 항목이 존재합니다.");
+ 		this.major.setFocus();
+ 	} else if(this.phone.value == "" || this.phone.value == null || this.phone.value.charAt() == " "){
+ 		alert("비어있는 항목이 존재합니다.");
+ 		this.phone.setFocus();
+ 	} else{
+		result = true;
+	}
+	
+	return result;
+	
+}
+
+]]></Script>
+  </Form>
+</FDL>

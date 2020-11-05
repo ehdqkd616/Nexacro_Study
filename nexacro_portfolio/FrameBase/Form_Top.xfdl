@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Top" width="1280" height="50" titletext="Form_Top">
+    <Layouts>
+      <Layout width="1280" height="50" screenid="example_screen">
+        <ImageViewer id="ImageViewer00" taborder="0" text="" left="0" top="0" width="240" height="50" image="url('imagerc::KH정보교육원.jpg')" stretch="fixaspectratio"/>
+        <Menu id="Menu00" taborder="1" left="240" top="0" width="660" height="50" innerdataset="menu_dataset" captioncolumn="m_name" idcolumn="m_id" levelcolumn="m_level"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>
