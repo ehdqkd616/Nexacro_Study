@@ -1,5 +1,5 @@
-# Gugbi_6_Nexacro_workspace
-### Nexacro Study
+# Nexacro_Study
+### Nexacro 공부
 
 - [A_Text](https://github.com/ehdqkd616/Gugbi_6_Nexacro_workspace/blob/main/testNexacro17/Work/A_Test.xfdl)
 - [B_Static](https://github.com/ehdqkd616/Gugbi_6_Nexacro_workspace/blob/main/testNexacro17/Work/B_Static.xfdl)
