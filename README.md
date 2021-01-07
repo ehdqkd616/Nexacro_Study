@@ -1,2 +1,2 @@
 # Gugbi_6_Nexacro_workspace
-Gugbi_6_Nexacro_workspace
+Nexacro 
