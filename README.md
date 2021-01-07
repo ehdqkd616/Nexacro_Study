@@ -1,7 +1,7 @@
 # Gugbi_6_Nexacro_workspace
 ### Nexacro Study
 
-- A_Text
+- [A_Text](https://github.com/ehdqkd616/Gugbi_6_Nexacro_workspace/blob/main/testNexacro17/Work/A_Test.xfdl)
 - B_Static
 - C_Div
 - D_Edit
